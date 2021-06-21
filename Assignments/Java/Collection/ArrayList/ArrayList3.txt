@@ -1,0 +1,35 @@
+package ArrayList;
+import java.util.ArrayList;
+import java.util.Collections;
+
+//9. Write a Java program to copy one array list into another.
+
+public class P9 {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String>list1=new ArrayList<String>();
+		
+		list1.add("pink");
+		list1.add("blue");
+		list1.add("yellow");
+		list1.add("black");
+		list1.add("orange");
+		
+		System.out.println(list1);
+		
+       ArrayList<String>list2=new ArrayList<String>();
+		
+		list2.add("sid");
+		list2.add("sidd");
+		list2.add("siddharth");
+		list2.add("bhagat");
+		list2.add("siddhu");
+		
+		System.out.println(list2);
+		
+		Collections.copy(list1, list2);
+		
+		System.out.println("After coping:"+list1);
+ }
+}

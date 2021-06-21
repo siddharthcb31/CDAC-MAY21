@@ -1,0 +1,25 @@
+package ArrayList;
+//11. Write a Java program to reverse elements in an array list.
+
+import java.util.*;
+
+
+public class P11 {
+	public static void main(String[] args) {
+			
+	    ArrayList<String>list1=new ArrayList<String>();
+			
+			list1.add("pink");
+			list1.add("blue");
+			list1.add("yellow");
+			list1.add("black");
+			list1.add("orange");
+			
+			System.out.println(list1);
+			Collections.reverse(list1);
+			System.out.println("After reverse:"+list1);
+		
+		}
+	
+	}
+	

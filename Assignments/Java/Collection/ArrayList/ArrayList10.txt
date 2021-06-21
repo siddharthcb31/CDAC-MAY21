@@ -1,0 +1,26 @@
+package ArrayList;
+
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class P10 {
+
+	public static void main(String[] args) {
+		
+    ArrayList<String>list1=new ArrayList<String>();
+		
+		list1.add("pink");
+		list1.add("blue");
+		list1.add("yellow");
+		list1.add("black");
+		list1.add("orange");
+		
+		System.out.println(list1);
+		Collections.shuffle(list1);
+		System.out.println("After Shuffling:"+list1);
+	
+	}
+
+}
+

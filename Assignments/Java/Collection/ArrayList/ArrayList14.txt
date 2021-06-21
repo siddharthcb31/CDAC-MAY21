@@ -1,0 +1,23 @@
+package ArrayList;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class P14 {
+
+	public static void main(String[] args) {
+ArrayList<String>list=new ArrayList<String>();
+		
+		list.add("Yellow");
+		list.add("black");
+		list.add("green");
+		list.add("blue");
+		list.add("green");
+		list.add("brown");
+		System.out.println(list);
+		
+		Collections.swap(list, 1, 3);
+		System.out.println(list);
+	}
+
+}

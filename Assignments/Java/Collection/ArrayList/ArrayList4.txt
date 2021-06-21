@@ -1,0 +1,22 @@
+package ArrayList;
+//8. Write a Java program to sort a given array list. 
+
+import java.util.*;
+
+public class P8 {
+
+	public static void main(String[] args) {
+	
+	ArrayList<String>list=new ArrayList<String>();
+	
+	list.add("pink");
+	list.add("blue");
+	list.add("yellow");
+	list.add("black");
+	list.add("orange");
+	
+	System.out.println("Before sorting" +list);
+	Collections.sort(list);
+	System.out.println("After sorting" +list);
+	}
+}

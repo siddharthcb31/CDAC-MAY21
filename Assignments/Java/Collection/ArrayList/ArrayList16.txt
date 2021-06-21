@@ -1,0 +1,38 @@
+package ArrayList;
+//13. Write a Java program to compare two array lists. 
+
+import java.util.ArrayList;
+
+public class P13 {
+	public static void main(String[]args){
+		
+		ArrayList<String>list=new ArrayList<String>();
+		
+		list.add("Yellow");
+		list.add("black");
+		list.add("green");
+		list.add("blue");
+		list.add("green");
+		list.add("brown");
+		System.out.println(list);
+		
+       ArrayList<String>list2=new ArrayList<String>();
+		
+		list2.add("Yellow");
+		list2.add("black");
+		list2.add("green");
+		list2.add("blue");
+		list2.add("green");
+		
+		System.out.println(list2);
+		
+		ArrayList<String>list3 = new ArrayList<String>();
+		
+	    for(String e : list) {
+	    	
+	    	list3.add(list2.contains(e) ? "Yes" : "No");
+	    	
+	    	System.out.println(list3);
+	    	}
+		}
+}

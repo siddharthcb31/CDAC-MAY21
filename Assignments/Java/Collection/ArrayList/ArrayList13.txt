@@ -1,0 +1,25 @@
+package ArrayList;
+//16. Write a Java program to clone an array list to another array list. 
+
+import java.util.ArrayList;
+
+public class p16 {
+	
+	public static void main(String[] args) {
+	ArrayList<String>list=new ArrayList<String>();
+	
+	list.add("Yellow");
+	list.add("black");
+	list.add("green");
+	list.add("blue");
+	list.add("green");
+	list.add("brown");
+	System.out.println(list);
+	
+   ArrayList<String>List1 = (ArrayList<String>)list.clone();
+   
+   System.out.println(List1);
+   
+	
+}
+	}
