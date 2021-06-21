@@ -1,0 +1,29 @@
+package LinkedList;
+
+//9. Write a Java program to insert some elements at the specified position into a linked list. 
+
+import java.util.LinkedList;
+
+public class p9 {
+public static void main(String[] args) {
+		
+		LinkedList<String>l_list = new LinkedList<String>();
+		
+		l_list.add("banana");
+		l_list.add("kiwi");
+		l_list.add("orange");
+		l_list.add("apple");
+		l_list.add("pineapple");
+	    
+		System.out.println(l_list);
+		
+		LinkedList<String>l_list1 = new LinkedList<String>();
+		
+		l_list1.add("watermelon");
+		l_list1.add("chikku");
+		
+		l_list.addAll(1, l_list1);
+		
+		System.out.println(l_list);
+}
+}

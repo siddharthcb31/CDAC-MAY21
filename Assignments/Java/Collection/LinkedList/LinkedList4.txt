@@ -1,0 +1,37 @@
+
+//4. Write a Java program to iterate a linked list in reverse order. 
+
+package LinkedList;
+
+import java.util.Iterator;
+import java.util.LinkedList;
+
+public class p4 {
+
+	
+
+	public static void main(String[] args) {
+		
+	LinkedList<String>l_list = new LinkedList<String>();
+	
+	l_list.add("banana");
+	l_list.add("kiwi");
+	l_list.add("orange");
+	l_list.add("apple");
+	l_list.add("pineapple");
+	
+	for( String e : l_list) {
+		
+		System.out.println(e);
+	}
+
+	 Iterator p = l_list.descendingIterator();
+	 
+	 while(p.hasNext()) {
+		 
+		 System.out.println(p.next());
+	 }
+	 }
+	}
+
+

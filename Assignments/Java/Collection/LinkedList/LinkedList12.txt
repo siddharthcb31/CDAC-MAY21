@@ -1,0 +1,38 @@
+package LinkedList;
+//17. Write a Java program to join two linked lists.
+
+import java.util.LinkedList;
+
+public class p16 {
+	
+	public static void main(String[] args) {
+
+		LinkedList<String>l_list = new LinkedList<String>();
+		
+		l_list.add("banana");
+		l_list.add("kiwi");
+		l_list.add("orange");
+		l_list.add("apple");
+		l_list.add("pineapple");
+	    
+		System.out.println(l_list);
+		
+        LinkedList<String>l_list1 = new LinkedList<String>();
+		
+		l_list1.add("bana");
+		l_list1.add("ki");
+		l_list1.add("ora");
+		l_list1.add("app");
+		l_list1.add("pine");
+	    
+		System.out.println(l_list);
+
+		LinkedList<String>a = new LinkedList<String>();
+		
+		a.addAll(l_list);
+		a.addAll(l_list1);
+		System.out.println(a);
+		
+		
+}
+}

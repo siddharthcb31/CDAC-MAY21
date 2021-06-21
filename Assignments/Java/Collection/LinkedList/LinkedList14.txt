@@ -1,0 +1,25 @@
+package LinkedList;
+//15. Write a Java program of swap two elements in a linked list.
+
+import java.util.Collections;
+import java.util.LinkedList;
+
+public class p14 {
+	public static void main(String[] args) {
+
+		LinkedList<String>l_list = new LinkedList<String>();
+		
+		l_list.add("banana");
+		l_list.add("kiwi");
+		l_list.add("orange");
+		l_list.add("apple");
+		l_list.add("pineapple");
+	    
+		System.out.println(l_list);
+		
+	Collections.swap(l_list, 0, 3);
+	System.out.println(l_list);
+	
+	}
+	
+}

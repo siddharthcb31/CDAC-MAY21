@@ -1,0 +1,29 @@
+package LinkedList;
+//10. Write a Java program to get the first and last occurrence of the specified elements in a linked list.
+
+
+import java.util.LinkedList;
+
+public class p10 {
+	public static void main(String[] args) {
+
+	LinkedList<String>l_list = new LinkedList<String>();
+	
+	l_list.add("banana");
+	l_list.add("kiwi");
+	l_list.add("orange");
+	l_list.add("apple");
+	l_list.add("pineapple");
+    
+	System.out.println(l_list);
+	
+	
+   Object first_element = l_list.getFirst();
+   System.out.println("first element is :" +first_element);
+	
+   Object last_element = l_list.getLast();
+   System.out.println("last element is :" +last_element);
+	
+	
+}    
+}

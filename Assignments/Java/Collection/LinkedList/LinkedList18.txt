@@ -1,0 +1,27 @@
+package LinkedList;
+//11. Write a Java program to display the elements and their positions in a linked list. 
+
+import java.util.LinkedList;
+
+public class p11 {
+
+	public static void main(String[] args) {
+
+		LinkedList<String>l_list = new LinkedList<String>();
+		
+		l_list.add("banana");
+		l_list.add("kiwi");
+		l_list.add("orange");
+		l_list.add("apple");
+		l_list.add("pineapple");
+	    
+		System.out.println(l_list);
+		int p;
+		for(p=0;p<l_list.size();p++);{
+			
+	  System.out.println("Element at index "+p+":" +l_list.get(p));
+			
+		}
+		}
+	
+}
