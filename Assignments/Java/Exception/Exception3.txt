@@ -1,0 +1,22 @@
+package CustomExceptionExample;
+
+class UserException extends Exception
+{
+	UserException(String str){
+		super(str); 
+		}
+}
+
+public class CustomExample3 {
+	public static void main(String[] args)
+	{
+		try{ 
+			UserException obj = new UserException("Creating user defined exception");
+			throw obj;
+		}
+		catch (UserException ex){ 
+			System.out.println("Caught a user defined exception"); 
+			System.out.println(ex.getMessage());
+ } 	
+ 
+}}

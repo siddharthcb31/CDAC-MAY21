@@ -1,0 +1,25 @@
+package CustomExceptionExample;
+
+import java.util.*;
+ class Custom extends Exception
+{
+	 Custom()
+{
+  
+ }
+}
+public class Custom1 {
+	public static void main(String[] args)
+	{
+	try
+	{ 
+	   Custom obj = new Custom();
+	   throw obj; 
+	 } 
+	catch ( Custom  ex) 
+	{ 
+	  System.out.println("Caught a user defined exception"); 
+	 } 	
+	 }
+	
+}
