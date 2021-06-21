@@ -1,0 +1,28 @@
+//5.A recursive Java palindrome checker
+
+public class rec5 {
+
+	
+	static int pal(int n, int temp) {
+		if(n==0)
+		return temp;
+		else
+		temp=(temp*10)+(n % 10);
+		return pal(n/10, temp);
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		int n = 121;
+		int temp =pal (n, 0);
+		
+		if(temp==n)
+		System.out.println("number is palindrome"); 
+		else
+		System.out.println("number is not a palindrome"); 
+		
+
+	}
+
+}

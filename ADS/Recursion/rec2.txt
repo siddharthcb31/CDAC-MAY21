@@ -1,0 +1,26 @@
+//1 1 2 3 
+//
+
+
+public class fiborec
+{
+
+	static int fibonacii(int n) 
+	{
+		if (n<=1)
+			return n;
+		return fibonacii(n-1)+fibonacii(n-2);
+	}
+	
+	
+	
+ public static void main(String[] args) 
+    {
+	
+	int k=50;
+	System.out.println("Fibonacii:");
+	for(int i=1;i<=k;i++)
+    System.out.println(fibonacii(i)+" ");
+	
+    }
+}

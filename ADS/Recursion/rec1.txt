@@ -1,0 +1,24 @@
+
+//1.Print a series of numbers with recursive Java methods
+
+
+public class Recur {
+
+	static int i=1;
+	static void show() {
+		
+	if(i<=10) {
+		
+		System.out.println(i);
+		i++;
+		show();
+	}	
+		
+	}
+	
+	public static void main(String[] args) {
+		
+         show();
+	}
+
+}
